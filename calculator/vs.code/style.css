@@ -1,0 +1,43 @@
+
+.text{
+margin-top: 130px;
+margin-left: 220px;
+
+
+}
+body{
+    background-color: rgb(49, 54, 58);
+}
+.text{
+    background-color: rgb(166, 172, 172);
+height: 330px;
+width: 220px;
+border-radius: 20px;
+}
+.number{
+    margin-top: 15px;
+    margin-left: 20px;
+    gap: 15px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,30px);
+
+    
+    
+}
+.text input{
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+    padding-bottom: 4px;
+    border-radius: 6px;
+
+}
+.number button{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right:10px;
+    padding-top: 10px;;
+    border-radius: 10px;
+    border: 20px;
+}
