@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    width: 120px;
+    height: 100px;
+    background-color:wheat;
+    margin:0 auto;
+    margin-top: 100px;
+    border-radius: 50% 50% 20% 20%;
+    
+}
+.eye{
+   display: flex;
+   justify-content: space-around;
+   margin-right: 30px;
+
+   
+}
+.lefteye{
+width: 20px;
+height: 20px;
+background-color:whitesmoke;
+border-radius:60%;
+margin-top: 30px;
+margin-left: 30px;
+margin-right:30px;
+}
+.righteye{
+    width: 20px;
+    height: 20px;
+    background-color: whitesmoke;
+    border-radius:60%;
+    margin-top: 30px;
+ }
+ .flex{
+    display:flex;
+    justify-content: space-around;
+    width: 200px;
+    margin: 0 auto;
+ }
+ .left{
+    height: 70px;
+    width: 20px;
+    background-color: blanchedalmond;
+    margin-top: 10px;
+ }
+ 
+ .hollbody{
+    height: 120px;
+    width:100px ;
+    background-color: antiquewhite;
+   border-radius: 15%;
+   margin-top: 5px;
+ }
+ .right{
+    height: 70px;
+    width: 20px;
+    background-color: blanchedalmond;
+    margin-top: 10px;
+    
+ }
+.leg{
+    display:flex ;
+    justify-content: space-around;
+    width: 200px;
+    margin:0 auto;
+
+
+}
+.leftleg{
+    height: 80px;
+    width: 20px;
+    background-color: antiquewhite;
+    margin-right: 20px;
+    
+}
+.rightleg{
+    height: 80px;
+    width: 20px;
+    background-color: antiquewhite;
+}
+.robot:hover .head{
+        background-color: brown;
+        width: 130px;
+        height: 100px;
+        border-radius: 60%;
+    }
+    .robot:hover .lefteye{
+        background-color:lightblue;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+    }
+    .robot:hover .righteye{
+        background-color:lightblue;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+    }
+    .robot:hover .rightleg{
+        background-color:rgb(88, 74, 76);
+    width:30px ;
+    height: 90px;
+    border-radius:50%;
+    }
+    .robot:hover .leftleg{
+        background-color:rgb(88, 83, 84);
+       
+        width:30px ;
+        height: 90px;
+        border-radius:50%;
+    }
+    .robot:hover .hollbody{
+        background-color:rgb(180, 9, 35);
+    height: 130px;
+    width: 120px;
+    border-radius: 50%;
+    }
+    .robot:hover .left{
+        background-color:rgb(37, 4, 9);
+    height: 130;
+    width: 110;
+    border-radius: 50%;
+    }
+    .robot:hover .right{
+        background-color:rgb(37, 4, 9);
+        height: 130;
+        width: 110;
+        border-radius: 50%;
+    }
+    @keyframes hollbody{
+        0%{
+            width: 2200px;
+            transform: rotate(0deg);
+        }
+        50%{
+            width:2190px;
+            transform: rotate(10deg);
+        }
+    }
+    .robot:hover.hollbody{
+        width:20px;
+        transform:background-color 1.0s ease-in-out;
+        animation: right;
+        animation-iteration-count: infinite;
+        animation-duration: 0.5s; 
+    }
+    .robot:hover .right{
+        width: 20px;
+        transition:background-color 1.0s ease-in-out;
+        animation: right;
+        animation-iteration-count: infinite;
+        animation-duration: 0.5s;
+    }
+    @keyframes right{
+        0%{
+            width: 419px;
+            transform: rotate(0deg);
+        }
+        50%{
+            width: 35px;
+            transform: rotate(30deg);
+        }
+    }
+
+    .robot:hover .left{
+        width: 10px;
+        transition:background-color 1.0s ;
+        transform-origin: top;
+        animation: right;
+        animation-iteration-count:infinite;
+        animation-duration: 0.5s;
+    }
+    
+    .robot:hover .rightleg{
+        width: 20px;
+        transition:background-color 1.0ms;
+        animation: rightleg;
+        animation-iteration-count:infinite;
+        animation-duration: 0.5s;
+    }
+    @keyframes rightleg{
+        0%{
+            width: 230px;
+            transform: rotate(0deg);
+        }
+        50%{
+            width: 235px;
+            transform: rotate(30deg);
+        }
+    }
+    .robot:hover .leftleg{
+        width: 20px;
+        transition:background-color 1.0s ease-in-out;
+        animation: leftleg;
+        animation-iteration-count:inherit;
+        animation-duration: 0.5s;
+    }
+    @keyframes leftleg{
+        0%{
+            width: 230px;
+            transform: rotate(0deg);
+        }
+        50%{
+            width: 35px;
+            transform: rotate(30deg);
+        }
+    }
+    .robot:hover .righteye{
+        width: 20px;
+        transition:background-color 1.0s ease-in-out;
+        animation: righteye;
+        animation-iteration-count: infinite;
+        animation-duration: 0.5s;
+    }
+    @keyframes righteye{
+        0%{
+            width: 230px;
+            transform: rotate(0deg);
+        }
+        50%{
+            width: 30px;
+            transform: rotate(10deg);
+        }
+    }
+    .robot:hover .lefteye{
+        width: 20px;
+        transition:background-color 1.0s ease-in-out;
+        animation: lefteye;
+        animation-iteration-count: infinite;
+        animation-duration: 0.5s;
+    }
+    @keyframes lefteye{
+        0%{
+            width: 230px;
+            transform: rotate(0deg);
+        }
+        50%{
+            width: 230px;
+            transform: rotate(10deg);
+        }
+    }
+    
+
